@@ -1,11 +1,8 @@
 'use strict';
 
-let sum = 0;
-
-for(let i = 0; i <= 999; i++) {
-  if(i % 3 == 0 || i % 5 == 0) {
-    sum += i;
-  }
+function SumDivisbleBy(n, p) {
+  let N = parseInt(p/n);
+  return n*(N)*((N)+1)/2;
 }
 
-console.log(sum);
+console.log(SumDivisbleBy(3,999) + SumDivisbleBy(5,999) - SumDivisbleBy(15,999));
