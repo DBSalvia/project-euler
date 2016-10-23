@@ -29,11 +29,11 @@ factors = [];
 primes = sievePrimes(n);
 
 for (let i = 0; i < primes.length; i++) {
-  while (n % primes[i] == 0) {
+  if (n % primes[i] == 0) {
     factors.push(primes[i]);
     n = n/primes[i];
   }
 }
 
-console.log(factors[factors.length]);
+console.log(factors[factors.length - 1]);
 console.timeEnd('time elapsed');
