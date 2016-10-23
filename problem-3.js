@@ -22,7 +22,7 @@ function sievePrimes(n) {
   return primes;
 }
 
-let n = 600851475143,
+let n = 28,
 primes = [],
 factors = [];
 
@@ -31,7 +31,6 @@ primes = sievePrimes(n);
 for (let i = 0; i < primes.length; i++) {
   if (n % primes[i] == 0) {
     factors.push(primes[i]);
-    n = n/primes[i];
   }
 }
 
