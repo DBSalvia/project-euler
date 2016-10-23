@@ -22,9 +22,7 @@ function sievePrimes(n) {
   return primes;
 }
 
-
-
-let n = 60085147514,
+let n = 600851475143,
 primes = [],
 factors = [];
 
@@ -37,6 +35,5 @@ for (let i = 0; i < primes.length; i++) {
   }
 }
 
-console.log(factors);
-console.log(n);
+console.log(factors[factors.length]);
 console.timeEnd('time elapsed');
